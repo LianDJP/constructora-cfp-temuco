@@ -105,18 +105,17 @@ export default {
 				'accordion-up': 'accordion-up 0.2s ease-out',
 				'fade-in': 'fadeIn 0.6s ease-out',
 				'slide-up': 'slideUp 0.8s ease-out'
+			},
+			backgroundImage: {
+				'gradient-hero': 'var(--gradient-hero)',
+				'gradient-section': 'var(--gradient-section)'
+			},
+			boxShadow: {
+				'professional': 'var(--shadow-professional)',
+				'card': 'var(--shadow-card)',
+				'float': 'var(--shadow-float)'
 			}
 		},
-		backgroundImage: {
-			'gradient-hero': 'var(--gradient-hero)',
-			'gradient-section': 'var(--gradient-section)'
-		},
-		boxShadow: {
-			'professional': 'var(--shadow-professional)',
-			'card': 'var(--shadow-card)',
-			'float': 'var(--shadow-float)'
-		}
-		}
 	},
 	plugins: [require("tailwindcss-animate")],
 } satisfies Config;
