@@ -21,7 +21,7 @@ const HeroSection = () => {
             Con compromiso, innovación y calidad, Constructora CFP desarrolla proyectos 
             residenciales, comerciales e industriales en la región de La Araucanía. 
             Nuestro objetivo es entregar soluciones constructivas que superen las expectativas 
-            de cada cliente, desde el primer plano hasta la entrega final.
+            de cada cliente, desde el primer contacto hasta la entrega final.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 mb-12">
