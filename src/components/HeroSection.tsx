@@ -1,15 +1,12 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Building2, Users, Award } from "lucide-react";
 import heroImage from "@/assets/hero-construction.jpg";
-
 const HeroSection = () => {
-  return (
-    <section id="inicio" className="relative min-h-[90vh] flex items-center">
+  return <section id="inicio" className="relative min-h-[90vh] flex items-center">
       {/* Background Image */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${heroImage})` }}
-      >
+      <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{
+      backgroundImage: `url(${heroImage})`
+    }}>
         <div className="absolute inset-0 bg-gradient-to-r from-construction-blue/90 via-construction-blue/70 to-transparent"></div>
       </div>
 
@@ -34,7 +31,7 @@ const HeroSection = () => {
               Ver Proyectos
               <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
             </Button>
-            <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-construction-blue">
+            <Button variant="outline" size="lg" className="border-white hover:bg-white text-zinc-950">
               Solicitar Cotización
             </Button>
           </div>
@@ -65,8 +62,6 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default HeroSection;
