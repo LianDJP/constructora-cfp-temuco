@@ -18,9 +18,10 @@ const HeroSection = () => {
           </h1>
           
           <p className="text-xl text-white/90 mb-8 leading-relaxed animate-slide-up">
-            Con más de una década de experiencia, Constructora CFP lidera proyectos 
-            de construcción residencial, comercial e industrial en la región de La Araucanía. 
-            Calidad, confianza y excelencia en cada obra.
+            Con compromiso, innovación y calidad, Constructora CFP desarrolla proyectos 
+            residenciales, comerciales e industriales en la región de La Araucanía. 
+            Nuestro objetivo es entregar soluciones constructivas que superen las expectativas 
+            de cada cliente, desde el primer plano hasta la entrega final.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 mb-12">
