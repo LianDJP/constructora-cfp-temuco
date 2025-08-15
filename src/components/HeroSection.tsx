@@ -47,7 +47,7 @@ const HeroSection = () => {
                 <Users className="h-8 w-8 text-construction-accent" />
               </div>
               <div className="text-2xl font-bold text-white">500+</div>
-              <div className="text-sm text-white/80">Clientes</div>
+              <div className="text-sm text-white/80">Clientes satisfechos</div>
             </div>
             <div className="text-center">
               <div className="flex justify-center mb-2">
