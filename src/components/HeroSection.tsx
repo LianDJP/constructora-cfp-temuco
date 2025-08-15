@@ -14,7 +14,10 @@ const HeroSection = () => {
       <div className="relative z-10 container mx-auto px-4 lg:px-8">
         <div className="max-w-2xl">
           <h1 className="text-5xl lg:text-6xl font-bold text-white mb-6 animate-fade-in">
-            Tu futuro, un proyecto a la vez
+            Construyendo el
+            <span className="block text-construction-accent">
+              Futuro de Temuco
+            </span>
           </h1>
           
           <p className="text-xl text-white/90 mb-8 leading-relaxed animate-slide-up">
@@ -37,21 +40,21 @@ const HeroSection = () => {
           <div className="grid grid-cols-3 gap-8 pt-8 border-t border-white/20">
             <div className="text-center">
               <div className="flex justify-center mb-2">
-                <Building2 className="h-8 w-8 text-construction-accent" />
+                
               </div>
               <div className="text-2xl font-bold text-white">150+</div>
               <div className="text-sm text-white/80">Proyectos</div>
             </div>
             <div className="text-center">
               <div className="flex justify-center mb-2">
-                <Users className="h-8 w-8 text-construction-accent" />
+                
               </div>
               <div className="text-2xl font-bold text-white">500+</div>
               <div className="text-sm text-white/80">Clientes</div>
             </div>
             <div className="text-center">
               <div className="flex justify-center mb-2">
-                <Award className="h-8 w-8 text-construction-accent" />
+                
               </div>
               <div className="text-2xl font-bold text-white">10+</div>
               <div className="text-sm text-white/80">Años</div>
