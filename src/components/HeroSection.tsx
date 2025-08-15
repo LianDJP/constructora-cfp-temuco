@@ -14,10 +14,7 @@ const HeroSection = () => {
       <div className="relative z-10 container mx-auto px-4 lg:px-8">
         <div className="max-w-2xl">
           <h1 className="text-5xl lg:text-6xl font-bold text-white mb-6 animate-fade-in">
-            Construyendo el
-            <span className="block text-construction-accent">
-              Futuro de Temuco
-            </span>
+            Tu futuro, un proyecto a la vez
           </h1>
           
           <p className="text-xl text-white/90 mb-8 leading-relaxed animate-slide-up">
