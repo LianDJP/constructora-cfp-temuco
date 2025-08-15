@@ -1,11 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Building2, Users, Award } from "lucide-react";
-import heroImage from "@/assets/hero-construction.jpg";
 const HeroSection = () => {
   return <section id="inicio" className="relative min-h-[90vh] flex items-center">
       {/* Background Image */}
       <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{
-      backgroundImage: `url(${heroImage})`
+      backgroundImage: `url(/lovable-uploads/f928274e-6a00-41ec-9b86-1da4649bbf20.png)`,
+      backgroundPosition: 'center 30%'
     }}>
         <div className="absolute inset-0 bg-gradient-to-r from-construction-blue/90 via-construction-blue/70 to-transparent"></div>
       </div>
