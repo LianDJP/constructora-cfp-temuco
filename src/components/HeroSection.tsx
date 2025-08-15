@@ -53,8 +53,8 @@ const HeroSection = () => {
               <div className="flex justify-center mb-2">
                 <Award className="h-8 w-8 text-construction-accent" />
               </div>
-              <div className="text-2xl font-bold text-white">10+</div>
-              <div className="text-sm text-white/80">Años</div>
+              <div className="text-2xl font-bold text-white">100%</div>
+              <div className="text-sm text-white/80">Compromiso 100%</div>
             </div>
           </div>
         </div>
