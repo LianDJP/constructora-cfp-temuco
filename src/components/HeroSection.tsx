@@ -36,22 +36,22 @@ const HeroSection = () => {
           {/* Stats */}
           <div className="grid grid-cols-3 gap-8 pt-8 border-t border-white/20">
             <div className="text-center">
-              <div className="flex justify-center mb-2">
+              <div className="flex justify-center mb-3">
                 <Building2 className="h-8 w-8 text-construction-accent" />
               </div>
-              <div className="text-sm text-white/80">Proyectos en curso</div>
+              <div className="text-base text-white/90 font-medium">Proyectos en curso</div>
             </div>
             <div className="text-center">
-              <div className="flex justify-center mb-2">
+              <div className="flex justify-center mb-3">
                 <Users className="h-8 w-8 text-construction-accent" />
               </div>
-              <div className="text-sm text-white/80">Clientes satisfechos</div>
+              <div className="text-base text-white/90 font-medium">Clientes satisfechos</div>
             </div>
             <div className="text-center">
-              <div className="flex justify-center mb-2">
+              <div className="flex justify-center mb-3">
                 <Award className="h-8 w-8 text-construction-accent" />
               </div>
-              <div className="text-sm text-white/80">Compromiso 100%</div>
+              <div className="text-base text-white/90 font-medium">Compromiso 100%</div>
             </div>
           </div>
         </div>
