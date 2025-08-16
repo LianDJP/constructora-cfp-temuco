@@ -10,7 +10,7 @@ const services = [
   {
     icon: Building,
     title: "Construcción Comercial",
-    description: "Oficinas, centros comerciales y espacios corporativos que impulsan el crecimiento empresarial."
+    description: "Locales, oficinas y espacios comerciales diseñados para potenciar tu emprendimiento y brindar una experiencia atractiva a tus clientes."
   },
   {
     icon: Factory,
