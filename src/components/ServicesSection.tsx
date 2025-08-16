@@ -20,7 +20,7 @@ const services = [
   {
     icon: Hammer,
     title: "Remodelaciones",
-    description: "Bodegas, talleres y espacios productivos creados para optimizar tus operaciones y garantizar durabilidad."
+    description: "Ampliaciones, renovaciones de viviendas y mejoras menores como trabajos de albañilería, instalación de techos, cambios de ventanas y puertas, entre otros."
   }
 ];
 
