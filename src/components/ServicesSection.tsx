@@ -5,7 +5,7 @@ const services = [
   {
     icon: Home,
     title: "Construcción Residencial",
-    description: "Casas, departamentos y condominios diseñados con los más altos estándares de calidad y confort."
+    description: "Casas, cabañas, quinchos, terrazas, entre otros, pensadas para hacer realidad tus ideas, con un enfoque en la calidad, el cumplimiento y la atención personalizada."
   },
   {
     icon: Building,
