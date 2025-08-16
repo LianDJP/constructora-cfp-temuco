@@ -20,7 +20,7 @@ const services = [
   {
     icon: Hammer,
     title: "Remodelaciones",
-    description: "Renovación y ampliación de espacios existentes con diseño moderno y funcional."
+    description: "Bodegas, talleres y espacios productivos creados para optimizar tus operaciones y garantizar durabilidad."
   }
 ];
 
