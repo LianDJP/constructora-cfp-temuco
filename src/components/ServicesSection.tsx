@@ -33,7 +33,8 @@ const ServicesSection = () => {
             Nuestros Servicios
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Casas, cabañas, quinchos, terrazas, entre otros, pensadas para hacer realidad tus ideas, con un enfoque en la calidad, el cumplimiento y la atención personalizada.
+            Ofrecemos soluciones integrales de construcción adaptadas a las necesidades 
+            específicas de cada cliente y proyecto.
           </p>
         </div>
 
