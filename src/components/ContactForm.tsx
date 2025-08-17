@@ -79,7 +79,7 @@ const ContactForm = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-foreground">Teléfono</h3>
-                    <p className="text-muted-foreground">+56 45 212 3456</p>
+                    <p className="text-muted-foreground">+56 9 5066 2535</p>
                   </div>
                 </div>
               </CardContent>

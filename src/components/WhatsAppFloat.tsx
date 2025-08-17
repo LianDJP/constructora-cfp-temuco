@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 const WhatsAppFloat = () => {
   const handleWhatsAppClick = () => {
     const message = encodeURIComponent("Hola! Me interesa conocer más sobre los servicios de Constructora CFP.");
-    const phoneNumber = "56945123456"; // Replace with actual WhatsApp number
+    const phoneNumber = "56950662535"; // Updated WhatsApp number
     window.open(`https://wa.me/${phoneNumber}?text=${message}`, "_blank");
   };
 
