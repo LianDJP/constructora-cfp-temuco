@@ -1,6 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Building2, Users, Award } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 const HeroSection = () => {
+  const navigate = useNavigate();
+  
   return <section id="inicio" className="relative min-h-[90vh] flex items-center">
       {/* Background Image */}
       <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{
@@ -25,7 +28,12 @@ const HeroSection = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 mb-12">
-            <Button variant="secondary" size="lg" className="group">
+            <Button 
+              variant="secondary" 
+              size="lg" 
+              className="group"
+              onClick={() => navigate("/proyectos")}
+            >
               Ver Proyectos
               <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
             </Button>
