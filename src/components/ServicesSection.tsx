@@ -15,7 +15,7 @@ const services = [
   {
     icon: Factory,
     title: "Construcción Industrial",
-    description: "Bodegas, plantas industriales y centros logísticos con tecnología de vanguardia."
+    description: "Bodegas, talleres y espacios productivos creados para optimizar tus operaciones y garantizar durabilidad."
   },
   {
     icon: Hammer,
