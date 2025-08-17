@@ -17,9 +17,8 @@ const Footer = () => {
               />
             </div>
             <p className="text-white/80 mb-6 leading-relaxed">
-              Constructora CFP es líder en proyectos de construcción en la región de 
-              La Araucanía. Con experiencia, calidad y compromiso, construimos el futuro 
-              de Temuco y sus alrededores.
+              En Constructora CFP creemos que cada obra es una oportunidad para crear valor y confianza. 
+              Nuestro compromiso es entregar proyectos de calidad que respondan a las necesidades de cada cliente.
             </p>
             <div className="flex flex-col space-y-3">
               <div className="flex items-center space-x-3">
