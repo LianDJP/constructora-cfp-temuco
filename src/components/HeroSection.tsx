@@ -29,7 +29,15 @@ const HeroSection = () => {
               Ver Proyectos
               <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
             </Button>
-            <Button variant="outline" size="lg" className="border-white hover:bg-white text-zinc-950">
+            <Button 
+              variant="outline" 
+              size="lg" 
+              className="border-white hover:bg-white text-zinc-950"
+              onClick={() => {
+                const contactSection = document.getElementById('contacto');
+                contactSection?.scrollIntoView({ behavior: 'smooth' });
+              }}
+            >
               Solicitar Cotización
             </Button>
           </div>
