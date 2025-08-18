@@ -31,7 +31,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <MapPin className="h-4 w-4 text-construction-accent" />
-                <span className="text-white/80">Av. Alemania 1234, Temuco</span>
+                <span className="text-white/80">Iquilla 1095, Padre las Casas</span>
               </div>
             </div>
           </div>

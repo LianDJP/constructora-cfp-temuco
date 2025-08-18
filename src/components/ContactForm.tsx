@@ -7,6 +7,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Mail, Phone, MapPin, Send } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+import { supabase } from "@/integrations/supabase/client";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -16,25 +17,51 @@ const ContactForm = () => {
     projectType: "",
     message: ""
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const { toast } = useToast();
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setIsSubmitting(true);
     
-    // Simulate form submission
-    toast({
-      title: "Mensaje enviado",
-      description: "Nos pondremos en contacto contigo pronto. ¡Gracias!",
-    });
+    try {
+      const { data, error } = await supabase.functions.invoke('send-contact-email', {
+        body: formData
+      });
 
-    // Reset form
-    setFormData({
-      name: "",
-      email: "",
-      phone: "",
-      projectType: "",
-      message: ""
-    });
+      if (error) {
+        console.error('Error sending email:', error);
+        toast({
+          title: "Error al enviar mensaje",
+          description: "Hubo un problema al enviar tu mensaje. Por favor, intenta nuevamente.",
+          variant: "destructive",
+        });
+        return;
+      }
+
+      toast({
+        title: "Mensaje enviado",
+        description: "Nos pondremos en contacto contigo pronto. ¡Gracias!",
+      });
+
+      // Reset form
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        projectType: "",
+        message: ""
+      });
+    } catch (error) {
+      console.error('Error:', error);
+      toast({
+        title: "Error al enviar mensaje",
+        description: "Hubo un problema al enviar tu mensaje. Por favor, intenta nuevamente.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (field: string, value: string) => {
@@ -176,8 +203,8 @@ const ContactForm = () => {
                     />
                   </div>
 
-                  <Button type="submit" className="w-full group" size="lg">
-                    Enviar Mensaje
+                  <Button type="submit" className="w-full group" size="lg" disabled={isSubmitting}>
+                    {isSubmitting ? "Enviando..." : "Enviar Mensaje"}
                     <Send className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                   </Button>
                 </form>
