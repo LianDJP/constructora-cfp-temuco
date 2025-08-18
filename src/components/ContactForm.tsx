@@ -94,8 +94,8 @@ const ContactForm = () => {
                   <div>
                     <h3 className="font-semibold text-foreground text-sm sm:text-base">Oficina</h3>
                     <p className="text-muted-foreground text-sm sm:text-base">
-                      Av. Alemania 1234<br />
-                      Temuco, La Araucanía
+                      Iquilla 1095<br />
+                      Padre las Casas, La Araucanía
                     </p>
                   </div>
                 </div>
