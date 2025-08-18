@@ -42,58 +42,58 @@ const ContactForm = () => {
   };
 
   return (
-    <section id="contacto" className="py-20 bg-gradient-section">
-      <div className="container mx-auto px-4 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-6">
+    <section id="contacto" className="py-12 sm:py-16 lg:py-20 bg-gradient-section">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-12 sm:mb-16">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-4 sm:mb-6">
             Hablemos de tu Proyecto
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto">
             Estamos aquí para convertir tus ideas en realidad. Contáctanos y 
             comencemos a construir juntos.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8 max-w-6xl mx-auto">
           {/* Contact Info */}
-          <div className="space-y-6">
+          <div className="space-y-4 sm:space-y-6">
             <Card className="border-0 shadow-card">
-              <CardContent className="p-6">
-                <div className="flex items-center space-x-4">
-                  <div className="p-3 bg-primary/10 rounded-full">
-                    <Mail className="h-5 w-5 text-primary" />
+              <CardContent className="p-4 sm:p-6">
+                <div className="flex items-center space-x-3 sm:space-x-4">
+                  <div className="p-2 sm:p-3 bg-primary/10 rounded-full flex-shrink-0">
+                    <Mail className="h-4 w-4 sm:h-5 sm:w-5 text-primary" />
                   </div>
-                  <div>
-                    <h3 className="font-semibold text-foreground">Email</h3>
-                    <p className="text-muted-foreground">contacto@constructoracfp.cl</p>
+                  <div className="min-w-0">
+                    <h3 className="font-semibold text-foreground text-sm sm:text-base">Email</h3>
+                    <p className="text-muted-foreground text-sm sm:text-base break-all">contacto@constructoracfp.cl</p>
                   </div>
                 </div>
               </CardContent>
             </Card>
 
             <Card className="border-0 shadow-card">
-              <CardContent className="p-6">
-                <div className="flex items-center space-x-4">
-                  <div className="p-3 bg-primary/10 rounded-full">
-                    <Phone className="h-5 w-5 text-primary" />
+              <CardContent className="p-4 sm:p-6">
+                <div className="flex items-center space-x-3 sm:space-x-4">
+                  <div className="p-2 sm:p-3 bg-primary/10 rounded-full flex-shrink-0">
+                    <Phone className="h-4 w-4 sm:h-5 sm:w-5 text-primary" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-foreground">Teléfono</h3>
-                    <p className="text-muted-foreground">+56 9 5066 2535</p>
+                    <h3 className="font-semibold text-foreground text-sm sm:text-base">Teléfono</h3>
+                    <p className="text-muted-foreground text-sm sm:text-base">+56 9 5066 2535</p>
                   </div>
                 </div>
               </CardContent>
             </Card>
 
             <Card className="border-0 shadow-card">
-              <CardContent className="p-6">
-                <div className="flex items-center space-x-4">
-                  <div className="p-3 bg-primary/10 rounded-full">
-                    <MapPin className="h-5 w-5 text-primary" />
+              <CardContent className="p-4 sm:p-6">
+                <div className="flex items-center space-x-3 sm:space-x-4">
+                  <div className="p-2 sm:p-3 bg-primary/10 rounded-full flex-shrink-0">
+                    <MapPin className="h-4 w-4 sm:h-5 sm:w-5 text-primary" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-foreground">Oficina</h3>
-                    <p className="text-muted-foreground">
+                    <h3 className="font-semibold text-foreground text-sm sm:text-base">Oficina</h3>
+                    <p className="text-muted-foreground text-sm sm:text-base">
                       Av. Alemania 1234<br />
                       Temuco, La Araucanía
                     </p>
@@ -106,14 +106,14 @@ const ContactForm = () => {
           {/* Contact Form */}
           <div className="lg:col-span-2">
             <Card className="border-0 shadow-card">
-              <CardHeader>
-                <CardTitle className="text-2xl text-foreground">
+              <CardHeader className="p-4 sm:p-6">
+                <CardTitle className="text-xl sm:text-2xl text-foreground">
                   Solicitar Información
                 </CardTitle>
               </CardHeader>
-              <CardContent>
-                <form onSubmit={handleSubmit} className="space-y-6">
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <CardContent className="p-4 sm:p-6">
+                <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div className="space-y-2">
                       <Label htmlFor="name">Nombre Completo</Label>
                       <Input
@@ -137,7 +137,7 @@ const ContactForm = () => {
                     </div>
                   </div>
 
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div className="space-y-2">
                       <Label htmlFor="phone">Teléfono</Label>
                       <Input

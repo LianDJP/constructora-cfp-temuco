@@ -116,5 +116,13 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+  }
+  
+  /* Mobile optimizations */
+  @media (max-width: 768px) {
+    .container {
+      @apply px-3;
+    }
   }
 }
