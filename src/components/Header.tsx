@@ -1,8 +1,29 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import { useNavigate, useLocation } from "react-router-dom";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const handleNavigation = (section: string) => {
+    if (location.pathname !== '/') {
+      navigate(`/#${section}`);
+    } else {
+      document.getElementById(section)?.scrollIntoView({ behavior: 'smooth' });
+    }
+    setIsMenuOpen(false);
+  };
+
+  const handleProjectsNavigation = () => {
+    if (location.pathname === '/proyectos') {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else {
+      navigate('/proyectos');
+    }
+    setIsMenuOpen(false);
+  };
 
   return (
     <header className="bg-background/95 backdrop-blur-sm border-b border-border sticky top-0 z-50">
@@ -19,18 +40,30 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <a href="#inicio" className="text-foreground hover:text-primary transition-colors">
+            <button 
+              onClick={() => handleNavigation('inicio')} 
+              className="text-foreground hover:text-primary transition-colors"
+            >
               Inicio
-            </a>
-            <a href="#servicios" className="text-foreground hover:text-primary transition-colors">
+            </button>
+            <button 
+              onClick={() => handleNavigation('servicios')} 
+              className="text-foreground hover:text-primary transition-colors"
+            >
               Servicios
-            </a>
-            <a href="#proyectos" className="text-foreground hover:text-primary transition-colors">
+            </button>
+            <button 
+              onClick={handleProjectsNavigation} 
+              className="text-foreground hover:text-primary transition-colors"
+            >
               Proyectos
-            </a>
-            <a href="#contacto" className="text-foreground hover:text-primary transition-colors">
+            </button>
+            <button 
+              onClick={() => handleNavigation('contacto')} 
+              className="text-foreground hover:text-primary transition-colors"
+            >
               Contacto
-            </a>
+            </button>
           </nav>
 
           {/* Mobile menu button */}
@@ -46,34 +79,30 @@ const Header = () => {
         {isMenuOpen && (
           <nav className="md:hidden py-4 border-t border-border">
             <div className="flex flex-col space-y-4">
-              <a 
-                href="#inicio" 
-                className="text-foreground hover:text-primary transition-colors"
-                onClick={() => setIsMenuOpen(false)}
+              <button 
+                onClick={() => handleNavigation('inicio')} 
+                className="text-foreground hover:text-primary transition-colors text-left"
               >
                 Inicio
-              </a>
-              <a 
-                href="#servicios" 
-                className="text-foreground hover:text-primary transition-colors"
-                onClick={() => setIsMenuOpen(false)}
+              </button>
+              <button 
+                onClick={() => handleNavigation('servicios')} 
+                className="text-foreground hover:text-primary transition-colors text-left"
               >
                 Servicios
-              </a>
-              <a 
-                href="#proyectos" 
-                className="text-foreground hover:text-primary transition-colors"
-                onClick={() => setIsMenuOpen(false)}
+              </button>
+              <button 
+                onClick={handleProjectsNavigation} 
+                className="text-foreground hover:text-primary transition-colors text-left"
               >
                 Proyectos
-              </a>
-              <a 
-                href="#contacto" 
-                className="text-foreground hover:text-primary transition-colors"
-                onClick={() => setIsMenuOpen(false)}
+              </button>
+              <button 
+                onClick={() => handleNavigation('contacto')} 
+                className="text-foreground hover:text-primary transition-colors text-left"
               >
                 Contacto
-              </a>
+              </button>
             </div>
           </nav>
         )}
