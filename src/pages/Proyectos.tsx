@@ -122,7 +122,7 @@ const Proyectos = () => {
               variant="outline"
               size="sm"
               onClick={() => navigate("/")}
-              className="border-white/30 text-white hover:bg-white/10"
+              className="border-white/30 text-foreground hover:bg-white/10"
             >
               <ArrowLeft className="h-4 w-4 mr-2" />
               Volver al inicio
