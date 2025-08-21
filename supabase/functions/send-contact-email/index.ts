@@ -31,7 +31,7 @@ const handler = async (req: Request): Promise<Response> => {
     // Send email to the construction company
     const emailResponse = await resend.emails.send({
       from: "Contacto Web <onboarding@resend.dev>",
-      to: ["contacto@constructoracfp.cl"],
+      to: ["tu-email-personal@gmail.com"], // Cambia por tu email personal temporalmente
       subject: `Nuevo contacto desde el sitio web - ${name}`,
       html: `
         <h2>Nuevo mensaje de contacto</h2>
