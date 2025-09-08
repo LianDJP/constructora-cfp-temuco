@@ -2,7 +2,7 @@ import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import ServicesSection from "@/components/ServicesSection";
 import ProjectsSection from "@/components/ProjectsSection";
-import ContactForm from "@/components/ContactForm";
+import GoogleFormSection from "@/components/GoogleFormSection";
 import Footer from "@/components/Footer";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
 
@@ -14,7 +14,7 @@ const Index = () => {
         <HeroSection />
         <ServicesSection />
         <ProjectsSection />
-        <ContactForm />
+        <GoogleFormSection />
       </main>
       <Footer />
       <WhatsAppFloat />
