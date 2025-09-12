@@ -126,11 +126,11 @@ All colors MUST be HSL.
     }
   }
 }
-/* Solución adicional para contenedores que se desbordan */
 * {
   box-sizing: border-box;
 }
 
-section, div {
-  max-width: 100vw;
+html, body {
+  overflow-x: hidden;
+  width: 100%;
 }
